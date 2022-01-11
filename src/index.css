@@ -1,13 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color:rgb(78, 219, 153);
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color:rgb(78, 139, 219)
+}
+
+.App {
+  text-align: center;
+  
+  display:flex;
+  flex-direction: column;
+  ;
+}
+
+input[type="text"]{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.0em;
+  margin:5px;
+  background-color: rgb(78, 139, 219);
+  color:black;
+  outline:none;
+  width:220px;
+}
+
+::placeholder {
+  color:black;
+}
+
+ul, div {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+  padding:0;
+}
+
+li {
+  margin:0;
+  padding:0;
+  width:80%;
+}
+
+.listCard {
+  line-height: 1.8em;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 3px;
+  box-shadow: 5px 5px 2px -1px rgba(90,90,90,0.2);
+  list-style:none;
+  padding:10px;
+  margin:10px;
+  align-items: center;
+  margin-left:0;
+}
+
+.githubIcon {
+  width:250px;
+}
+
+.footer {
+  display:flex;
+  flex-direction:row;
+  align-self:auto;
+}
+
+.footerDate {
+  margin-left:8px;
 }
