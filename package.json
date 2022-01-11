@@ -2,7 +2,7 @@
   "name": "git_repo_search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/martinrombach88/git_repo_search",
+  "homepage": "https://martinrombach88.github.io/git_repo_search/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
