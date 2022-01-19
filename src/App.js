@@ -1,13 +1,14 @@
-import './App.css';
 
-import Search from './Search';
+import Search from '../src/components/Search';
+
 
 function App() {
   return (
-    <div >
+    <div id="appContainer">
         < Search />
     </div>
   );
 }
+
 
 export default App;

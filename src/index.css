@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 
+#appContainer {
+  height:95vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
 body {
-  background-color: black;
-  color:rgb(78, 219, 153);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -12,7 +17,7 @@ a {
 
 .App {
   text-align: center;
-  
+  align-items: center;
   display:flex;
   flex-direction: column;
   ;
@@ -22,8 +27,7 @@ input[type="text"]{
   font-family: 'Roboto', sans-serif;
   font-size:1.0em;
   margin:5px;
-  background-color: rgb(78, 139, 219);
-  color:black;
+
   outline:none;
   width:220px;
 }
@@ -32,12 +36,18 @@ input[type="text"]{
   color:black;
 }
 
-ul, div {
+#searchList, #searchList ul {
   display:flex;
   flex-direction: column;
   align-items: center;
   margin:0;
   padding:0;
+}
+
+#userList {
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
 }
 
 li {
@@ -58,16 +68,44 @@ li {
   margin-left:0;
 }
 
-.githubIcon {
-  width:250px;
+.listAvatar {
+  width:50%;
 }
 
-.footer {
+.listTop {
+  width: 75%;
+  text-align:center;
+  margin-left: 40px;
+}
+
+.listDetail {
   display:flex;
-  flex-direction:row;
-  align-self:auto;
+  flex-direction:column;
+  border:black 1px solid;
+  margin:0;
+  padding:0;
+}
+
+.listDetail h4{
+  margin:1%;
+}
+
+.githubIcon {
+  width:100px;
+}
+
+#resultsDiv {
+  display:flex;
+  flex-direction: row;
+}
+
+
+.footer {
+  position:absolute;
+  bottom:1%;
 }
 
 .footerDate {
   margin-left:8px;
 }
+

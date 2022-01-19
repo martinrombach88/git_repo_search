@@ -6,10 +6,7 @@ const Footer = ({searchTerm}) => {
     if (searchTerm.length > 4)
         return ( 
             
-            <div className="footer">
-                <p>{searchTerm}</p>
-                <p className="footerDate">Repos for {date}</p>
-            </div>
+                <p className="footerDate">{searchTerm}'s repos for {date}</p>
 
         )
     else {
