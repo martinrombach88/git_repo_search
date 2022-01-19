@@ -22,7 +22,6 @@ const UserList = ({searchTerm}) => {
                     return res.json();
                     })
                 .then(data => { 
-                    console.log(data);
                     if (data == null) {
                         throw Error('Username not found, try another.');
                     } 

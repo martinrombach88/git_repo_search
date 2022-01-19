@@ -6,7 +6,6 @@ import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container'
 import RepoList from '../components/RepoList';
 import UserList from '../components/UserList';
-import Footer from '../components/Footer';
 import gitHubIcon from '../images/github.png';
 
 const Search = () => {
@@ -44,10 +43,6 @@ const Search = () => {
                         }}
                         />
                     </Grid>
-             
-             
-
-
                 </Grid>
             </Container>
 
@@ -58,12 +53,6 @@ const Search = () => {
                         </Grid>     
 
             </Container>
-
-
-            {/* <div className="footer">
-            <p>Github Repo Search by Martin Rombach </p>
-            <Footer searchTerm={searchTerm} />
-            </div> */}
         
         </div>
 

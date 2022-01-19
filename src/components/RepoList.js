@@ -48,11 +48,6 @@ const RepoList = ({ searchTerm }) => {
                                     <Button size="small" href={i.html_url} >GO TO REPO</Button>
                                 </CardActions>
                             </Card>
-                            // <li key={i.name.toString()} className="listCard">
-                            //     <strong>Name: </strong>{i.name}<br></br>
-                            //     <strong>Description: </strong>{i.description}<br></br>
-                            //     <strong>Link: </strong><a href={i.html_url}>{i.html_url}</a>
-                            // </li>
                         return li;
                     });
                     setData(listItems);
@@ -60,9 +55,7 @@ const RepoList = ({ searchTerm }) => {
                 .catch((error) => {
                         setError(error.message);    
                     });
-            }
-        
-        
+            }      
     }, [url]);
 
     if (!data) {
@@ -72,16 +65,12 @@ const RepoList = ({ searchTerm }) => {
         )
     } else {
         return (
-        <div>
-        
-            {data}
-            
+        <div>      
+            {data} 
         </div>
         
       );
-    }  
-
-    
+    }    
 }
 
 export default RepoList;
