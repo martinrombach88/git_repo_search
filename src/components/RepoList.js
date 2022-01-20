@@ -34,12 +34,12 @@ const RepoList = ({ searchTerm }) => {
                     const listItems = data.map((i) => { 
                         let li = 
                             
-                            <Card key={i.name.toString()} sx={{ mt: 1,  }} variant="outlined">
+                            <Card key={i.name.toString()} sx={{ mt: 1 }} variant="outlined">
                                 <CardContent>
                                     <Typography sx={{ fontSize: 14, fontWeight: 'bold', mb: 1.5}} color="text.primary">
                                         {i.name}
                                     </Typography>
-                                    <Typography sx={{ mb: 1.5 }} color="text.primary">
+                                    <Typography sx={{ mb: 1.5, width:400 }} color="text.primary">
                                         {i.description}
                                     </Typography>
                                 </CardContent>

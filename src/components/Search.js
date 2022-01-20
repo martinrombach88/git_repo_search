@@ -45,9 +45,9 @@ const Search = () => {
                     </Grid>
                 </Grid>
             </Container>
-
-            <Container>
-                        <Grid container>
+        
+            <Container >
+                        <Grid container sx={{justifyContent: 'center' }}>
                             <UserList searchTerm={searchTerm} xs={12} md={6} lg={4}/>
                             <RepoList searchTerm={searchTerm} xs={12} md={6} lg={4}/>
                         </Grid>     
